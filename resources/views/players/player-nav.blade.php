@@ -20,7 +20,7 @@
     </x-button>
 
     <x-button>
-        <a href="/players/{{ $player->slug }}/edit">Uredi podatke o igraču</a>
+        <a href="/players/{{ $player->slug }}/edit">Uredi podatke</a>
     </x-button>
 
 
@@ -28,7 +28,7 @@
         @csrf
         @method('DELETE')
         <x-button class="bg-red-600 hover:bg-red-800" onclick="return confirm('Želite li obrisati igrača?')">
-            Izbriši ovog igrača
+            Izbriši
         </x-button>
     </form>
 </div>
